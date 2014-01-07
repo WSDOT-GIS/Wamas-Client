@@ -31,7 +31,13 @@ namespace WA.Master.Address.Correction {
         
         /// <remarks/>
         public Service() {
-            this.Url = "http://198.238.214.59/addresscorrection_v2/service.asmx";
+            string urlSetting = System.Configuration.ConfigurationManager.AppSettings["CorrectionUrl"];
+            if ((urlSetting != null)) {
+                this.Url = string.Concat(urlSetting, "addresscorrection_v2/service.asmx");
+            }
+            else {
+                this.Url = "http://geoservicestest.wa.gov/addresscorrection_v2/service.asmx";
+            }
         }
         
         /// <remarks/>

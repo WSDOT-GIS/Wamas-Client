@@ -31,7 +31,13 @@ namespace WA.Master.Address.Geocoder {
         
         /// <remarks/>
         public Geocoder() {
-            this.Url = "http://198.238.214.59/geocoder_v2/service.asmx";
+            string urlSetting = System.Configuration.ConfigurationManager.AppSettings["GeocoderUrl"];
+            if ((urlSetting != null)) {
+                this.Url = string.Concat(urlSetting, "geocoder_v2/service.asmx");
+            }
+            else {
+                this.Url = "http://geoservicestest.wa.gov/geocoder_v2/service.asmx";
+            }
         }
         
         /// <remarks/>
