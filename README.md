@@ -1,7 +1,12 @@
-*Washington Master Address Services (WAMAS)* Client library
+WAMAS Client library
 ===========================================================
 
 This is a client library for the [Washington Master Address Services (WAMAS)] SOAP web services.
+
+## Get compiled library ##
+
+You can get the latest released client library from https://github.com/WSDOT-GIS/Wamas-Client/releases/latest
+
 
 ## create.cmd ##
 
