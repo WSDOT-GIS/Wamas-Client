@@ -1,7 +1,7 @@
 WAMAS Client library
 ===========================================================
 
-This is a client library for the [Washington Master Address Services (WAMAS)] SOAP web services.
+This is a .NET client library for the [Washington Master Address Services (WAMAS)] SOAP web services.
 
 ## Get compiled library ##
 
